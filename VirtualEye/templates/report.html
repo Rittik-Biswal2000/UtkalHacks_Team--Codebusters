@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Report Crime</title>
+       <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+       <style>
+		body{
+      text-align: center;
+        }
+        .form-group{
+            margin: auto;
+            width:50%;
+            text-align: center;
+        }
+        .content{
+            margin: auto;
+            width: auto;
+            text-align: center;
+            background-color: aquamarine;
+            
+        }
+        #y{
+          padding: 20px;
+      margin:20px auto;
+      width:100%;
+      max-width:800px;
+      border:20px solid grey;
+        }
+        
+        
+        
+
+		
+
+	</style>
+    </head>
+    <body>
+        <nav class="navbar  navbar-expand-lg navbar-light bg-light">
+  
+          <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa fa-eye" aria-hidden="true"></i>VirtualEye</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="http://127.0.0.1:5000/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./search.html">Search<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                  </li>
+    
+                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active"><a class="nav-link" href="#">Login <i class='fas fa-user' style='font-size:24px'></i><span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Sign Up <i class='fas fa-user-plus' style='font-size:24px'></i><span class="sr-only">(current)</span></a></li>
+              </ul>
+            </div>
+          </div>
+          </nav>
+          <div id="y">
+          <h1>{{s}}</h1>
+          <div class="report">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Report Violations</h1>
+                  <p class="lead">Contribute to Road Safety !!!</p>
+                </div>
+              
+    
+            <br>
+            <br><!---
+            <div class="form-group">
+                <label for="comment">Enter Crime :</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+                <br>
+                <button type="submit" class="btn btn-primary" >Submit</button>
+              </div>
+            -->
+              <form autocomplete="off" name="search" action="./report.html" method="post">
+        
+                <div class="form-group">
+                  <label for="comment">Enter Violation :</label>
+                <textarea autocomplete="off" type="text" name="name" class="form-control" placeholder="Give more Details..."></textarea>
+                <br>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" onclick="callalert()">Submit</button>
+                
+              </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+		
+            var status = String( "{{s}}" );
+                console.log(status);
+                function callalert() {
+                   alert("Offense Reported !!!");
+}
+    
+            function changescreen(){
+                var status = String( "{{s}}" );
+                console.log(status);
+                if( status < "l" ){
+                    console.log(status);
+
+                    
+    
+                }
+    
+            }
+          
+    
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+    </div>
+    
+    </body>
+</html>

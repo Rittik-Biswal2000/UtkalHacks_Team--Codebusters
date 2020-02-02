@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+       <style>
+		body{
+     text-align: center;
+        }
+        .form-group{
+            margin: auto;
+            width:50%;
+            text-align: center;
+        }
+        #x{
+          padding: 20px;
+      margin:20px auto;
+      width:100%;
+      max-width:800px;
+      border:20px solid grey;
+        }
+        .row{
+            margin: auto;
+        }
+        .img-thumbnail{
+          width: 200px; /* You can set the dimensions to whatever you want */
+          height: 200px;
+         object-fit: cover;
+        }
+}
+        
+
+		
+
+	</style>
+    </head>
+    <body>
+        
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa fa-eye" aria-hidden="true"></i>VirtualEye</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                  </li>
+    
+                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active"><a class="nav-link" href="#">Login <i class='fas fa-user' style='font-size:24px'></i><span class="sr-only">(current)</span></a></li>
+                <li class="nav-item active"><a class="nav-link" href="#">Sign Up <i class='fas fa-user-plus' style='font-size:24px'></i><span class="sr-only">(current)</span></a></li>
+              </ul>
+            </div>
+          </div>
+          </nav>
+          
+          <br>
+          <br>
+          <br>
+
+          <div id="x">
+        <div class="content">
+        <h1>{{q}}</h1>
+        <form autocomplete="off" name="search" action="./" method="post">
+          <h3>Enter Serial Number:</h3>
+            <div class="form-group">
+              <br>
+             <input autocomplete="off" type="text" name="name" class="form-control form-control-lg" placeholder="Serial Number"><br>
+             
+            </div>
+            
+            <button type="submit" class="btn btn-primary" onclick="showtext()">Submit</button>
+            
+          </form>
+          
+          <!---
+        <form autocomplete="off" name="search" action="./" method="post">
+            <br>
+            <br>
+            <label>Enter Vehicle Number to Search:</label>
+            <br>
+            <input autocomplete="off" type="text" name="name"><br>
+            <input type="submit" value="submit" onclick="showtext()"><br>
+            
+    
+            
+        </form>
+    -->
+</div>
+<br>
+<br>
+
+<a href="./search.html"><button type="button" class="btn btn-primary btn-lg" >Get Details</button></a>
+<br>
+<br>
+    <div class="report">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Report Violations</h1>
+              <p class="lead">Contribute to Road Safety !!!</p>
+            </div>
+          
+
+        <br>
+        <br>
+        <a href="./report.html"><button type="button" class="btn btn-danger btn-lg">Report</button></a>
+        </div>
+    </div>
+
+    <div class="row">
+      <!--<form autocomplete="off" name="search" action="./" method="post"></form>-->
+        <div class ="col-lg-4 col-sm-6 col-md-6"><img src="https://qph.fs.quoracdn.net/main-qimg-f93403f6d32bc43b40d85bd978e88bbf.webp" class="img-thumbnail"  >
+        </div>
+        <div class ="col-lg-4 col-sm-6 col-md-6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3p3ACZcPNyxlB-OH722O4EWpJlMZWdm-LsnDMYGJjh56GgQWN&s" class="img-thumbnail">
+         </div>
+        <div class ="col-lg-4 col-sm-6 col-md-6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ38_3IRR3NW91ypMhf-4xuu-_HNaUjQj73hY-iTC34RgihrNxS8Q&s" class="img-thumbnail" >
+        </div>
+        <br>
+       
+    
+   
+  
+       
+        <div class ="col-lg-4 col-sm-6 col-md-6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm6eXK0SKQuKlxm-QnyG-WzPfg7iIjyIkF67BWcF8kCu8wkEVX&s" class="img-thumbnail">
+        </div>
+        <div class ="col-lg-4 col-sm-6 col-md-6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOb0qi-tiaGo5WwA-bpooNrfUR83p6Tqbj9KAM1-r2T0b_BwF_aQ&s" class="img-thumbnail">
+          </div>
+        <div class ="col-lg-4 col-sm-6 col-md-6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvl4E9gYQfMRwFigd7pZPKvPSp5veu2BJSr2ow2ZPovDOg5YaQWQ&s" class="img-thumbnail">
+        </div>
+        <br>
+       
+    
+    
+        
+        <div class ="col-lg-4 col-sm-6 col-md-6"><img src="https://4.imimg.com/data4/UP/CC/ANDROID-38712709/product-500x500.jpeg" class="img-thumbnail">
+          </div>
+        <div class ="col-lg-4 col-sm-6 col-md-6"><img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2018/12/27/w900X450/number_plate_EPS.jpg" class="img-thumbnail">
+         </div>
+        <div class ="col-lg-4 col-sm-6 col-md-6"><img src="https://cdni.autocarindia.com/ExtraImages/20180402113123_NumberPlate_Swift.jpg" class="img-thumbnail">
+          </div>
+        <br>
+    
+    </div>
+        <script type="text/javascript">
+		
+            var status = String( "{{q}}" );
+                console.log(status);
+                function showtext() {
+                   alert("Vehicle Number added to Database !!!");
+}
+    
+            function changescreen(){
+                var status = String( "{{q}}" );
+                console.log(status);
+                if( status < "l" ){
+                    console.log(status);
+                    
+
+                    
+    
+                }
+    
+            }
+          
+    
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+      </div>
+       
+    </body>
+</html>
